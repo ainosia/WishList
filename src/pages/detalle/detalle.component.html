@@ -5,12 +5,11 @@
 </ion-header>
 
 <ion-content padding>
-  <h3 margin-bottom>{{ lista.nombre }}</h3>
   <ion-card>
     <ion-card-header>
       <ion-item>
         <ion-label>Nombre de la Lista</ion-label>
-        <ion-input type="text" [(ngModel)]="lista.nombre"></ion-input>
+        <ion-input type="text" [(ngModel)]="lista.nombre" class="hightlight"></ion-input>
       </ion-item>
     </ion-card-header>
     <ion-card-content>
@@ -23,5 +22,7 @@
       </ion-list>
     </ion-card-content>
   </ion-card>
-  <button (click)="borrarItem()" ion-button class="button-block" color="danger" margin-top>Eliminar lista</button>
+  <div class="btn_wrapper">
+    <button (click)="borrarItem()" ion-button class="button-block">Eliminar lista</button>
+  </div>
 </ion-content>
